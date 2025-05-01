@@ -1,26 +1,65 @@
-#Q 7 Functions
+#Loops 7
 """
-def palindrome():
-    x = input("Enter the String: ")
-    r = tuple(x)
-    y = tuple(reversed(x))
+n = int(input("Enter the value of n: "))
+r = int(input("Enter the value of r: "))
+z = 1
 
-    if r == y :
-        print("It's a Palindrome.")
+def fact(n):
+    fact = 1
+    for i in range(1,n+1):
+        fact *= i
+    return fact
+print("Factorial of Numnerator = ",fact(n))
+
+
+
+def ncr(n,r):
+    if r > n:
+        return 0 # ncr is 0 when r > n
     else:
-        print("It's not a Palindrome.")
+        return fact(n)// (fact(r) * fact(n-r))
 
 
-palindrome()
+print("nCr = ",ncr(n,r))
+
 """
 
-def palindrome():
-    x = input("Enter the String: ")
 
-    if y[::1] == y.[::-1]:
-        print("It's a Palindrome.")
+#For calculating nPr
+
+n = int(input("Enter the Value of n: "))
+r = int(input("Enter the value of r: "))
+
+def fact(n):
+    fact = 1
+    for i in range(1,n+1):
+        fact *= i
+    return fact
+print("Factorial of n: ",fact(n))
+
+def npr(n,r):
+    if r > n:
+        return 0
     else:
-        print("It's not a Palindrome.")
+        return fact(n)//fact(n-r)
 
-palindrome()
-        
+print("nPr = ",npr(n,r))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

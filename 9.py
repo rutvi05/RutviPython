@@ -1,9 +1,6 @@
-#Q9 List
-lst1 =[1,12,13,14,15,23,24,25]
-lst2 =[2,3,12,13,34,23,45,65,1]
-lst3 =[]
-for i in range(len(lst1)):
-    if (i in lst1 and i in lst2) == True:
-        lst3.append(i)
+#Loops 9 Print N natural numbers in reverse order
+x = int(input("Enter the number: "))
+for i in range(x,0,-1):
+    print(i)
 
-print(lst3)
+

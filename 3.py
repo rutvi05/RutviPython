@@ -1,21 +1,12 @@
-#Q3 Set
-s = set()
-lst = ['KLRahul','Hardik','Virat','Rohit','Krunal']
-'''
-for i in range(1,6):
-    i = input(f'Enter {i} name: ')
-    lst.append(i)
-print(set(lst))
-'''
-s.update(lst)
-print(s)
+#Loops Q 3
+a = 0
+d = 0
+x = input("Enter the String: ")
+for i in x:
+    if i.isalpha() == True:
+        a = a + 1
+    elif i.isdigit() == True:
+        d = d + 1
 
-
-s.remove("Virat")
-s.add("Sandhya")
-
-s.remove("Hardik")
-s.remove("Rohit")
-
-print('The required set: ',s)
-
+print("The Number of Alphabets: ",a)
+print("The Number of Digits: ",d)

@@ -1,12 +1,12 @@
-#Q6 Functions
-def q6(n):
-    lst = []
-    for i in range(1,n+1):
-        tup = (i ,i**2 ,i**3)
-        a = print(tuple(tup))
-        lst.append(tup)# aa khatarnak hatu
-    print(lst)
+#Loop Q 6
 
 
-q6(int(input(f"Enter the Number: ")))
-        
+for i in range(1,25):
+    if 1 <= i <= 11:
+        print(i,"AM")
+    elif i == 12:
+        print(i,"Noon")
+    elif 13 <= i <= 23:
+        print(i,"PM")
+    else:
+        print(i,"Midnight")

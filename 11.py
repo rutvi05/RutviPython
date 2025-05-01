@@ -1,19 +1,9 @@
-#Q 11 Functions
-def create_list():
-    lst1 = ['Rutvi','Solanki','Sandhya','Giriraj']
-    lst2 = ['Solanki','Aditya','Raj','Anshu','Sandhya','Giriraj']
-    lst3 = []
-    x = set(lst1)
-    y = set(lst2)
+#Loops 11 Calculate the value of sin(x) where x is in radians
 
-    for i in x:
-        for a in y:
-            if i == a:
-                lst3.append(i)
-            else:
-                pass
-
-    print("The Intersection List is: ",lst3)
+z = int(input("Enter the value of x in degrees: "))
+x = z*(3.14/180)
+print("x in Radians: ",x)
 
 
-create_list()
+def sin():
+    for i in range(1,)

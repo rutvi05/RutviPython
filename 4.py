@@ -1,17 +1,28 @@
-#Q4 Set
-s = {'rutvi','Anshu','Aditya','aarambh','Aarushi','bavo','Bhavi','namrata','nikita'}
-sA = set()
-sB = set()
+#Q 4 Functions
 
-for i in list(s):
-    k = i.upper()
-    if k.startswith("A"):
-        sA.add(k)
-    elif k.startswith("B"):
-        sB.add(k)
+"""
+#METHOD 1
+def sum_avg():
+    total = 0
+    for i in range(1,6):
+        x = int(input(f"For {i}, Enter the Value: "))
+        total = x + total
+    print(f"The Total of all the subjects: {total}")
+    avg = total / 5
+    print(f"The average of all the Five Subjects: {avg}")
 
 
+sum_avg()
 
-      
-print(sA)
-print(sB)
+"""
+
+#METHOD 2
+
+def sum_avg(s1,s2,s3,s4,s5):
+    total = s1 + s2 + s3 + s4 + s5
+    avg = total / 5
+    print(f"The Total of all the five subjects: {total}")
+    print(f"The average of all the five subjects: {avg}")
+
+
+sum_avg(5,5,3,4,2)
